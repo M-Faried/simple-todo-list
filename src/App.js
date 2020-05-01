@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { BrowserRouter as Router, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Redirect } from 'react-router-dom';
 import Header from './components/layout/Header';
 import AddTodo from './components/AddTodo';
 import Todos from './components/Todos';
@@ -70,6 +70,7 @@ class App extends Component {
   render() {
     return (
       <Router>
+        <Redirect from='/' to='/home' />
         <div className='App'>
           <div className='container'>
             <Header />
@@ -77,7 +78,7 @@ class App extends Component {
             {/* The Route to the todos page */}
             <Route
               exact
-              path='/'
+              path='/home'
               render={() => (
                 <React.Fragment>
                   <AddTodo addTodo={this.addTodo} />
