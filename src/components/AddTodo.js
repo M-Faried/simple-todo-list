@@ -5,14 +5,17 @@ export default class AddTodo extends Component {
     title: '',
   };
 
-  onTodoTitleChange = (e) => {
+  onTitleChange = (e) => {
+    //Updating the state with the value of the text input
     this.setState({ title: e.target.value });
   };
 
   onSubmit = (e) => {
     e.preventDefault();
     if (this.state.title) {
+      //Calling the parent's add todo function.
       this.props.addTodo(this.state.title);
+      //Clearing the text input
       this.setState({ title: '' });
     }
   };
@@ -29,7 +32,7 @@ export default class AddTodo extends Component {
           className='form-input'
           placeholder='Add Todo...'
           value={this.state.title}
-          onChange={this.onTodoTitleChange}
+          onChange={this.onTitleChange}
         />
 
         <button type='submit' className='form-btn'>
