@@ -14,10 +14,10 @@ class App extends Component {
           <Router>
             <Header />
 
-            <Redirect from='/' to='/simple-todo-list/home' />
+            <Redirect from='/' to='/simple-todo-list' />
 
             {/* The Route to the todos page */}
-            <Route exact path='/simple-todo-list/home' component={TodoList} />
+            <Route exact path='/simple-todo-list' component={TodoList} />
 
             {/* The route to the about page */}
             <Route path='/simple-todo-list/about' component={About} />
