@@ -5,11 +5,11 @@ export default function Header() {
   return (
     <header style={headerStyle}>
       <h1>Todo List</h1>
-      <Link to='/simple-todo-list' style={linkStyle}>
+      <Link to='/todo-list' style={linkStyle}>
         Home
       </Link>{' '}
       |{' '}
-      <Link to='/simple-todo-list/about' style={linkStyle}>
+      <Link to='/todo-list/about' style={linkStyle}>
         About
       </Link>
     </header>

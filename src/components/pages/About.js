@@ -12,6 +12,7 @@ export default function About() {
       <p style={{ textAlign: 'center' }}>
         <a
           href='mailto:m.a.faried@gmail.com'
+          // eslint-disable-next-line
           target='_blank'
           style={{ color: 'white', textDecoration: 'underline' }}
         >
