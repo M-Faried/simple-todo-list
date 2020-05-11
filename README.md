@@ -2,7 +2,7 @@
 
 A simple todo list application which was built using REACT framework
 
-## REACT Features Used
+## Used API's
 
 - react-router DOM
 - Context API
